@@ -1,0 +1,249 @@
+
+.mypic {
+	z-index:1500;
+	display: block;
+	float:left;
+	padding-top:10px;
+	padding-right:10px;
+	margin-right:10px;
+	padding-left:10px;
+
+	padding-bottom:10px;
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+
+p.titles-margin{
+	margin-bottom:50px;
+}
+
+@media screen and (max-width: 600px) {
+	.mypic {
+  	z-index:1500;
+  	display: block;
+  	float:none;
+		align:center;
+		margin:auto;
+  	padding-bottom:10px;
+  	-webkit-filter: grayscale(100%);
+  	filter: grayscale(100%);
+		margin-bottom: 20px;
+  }
+
+	p.titles-margin{
+		margin-bottom:20px;
+	}
+}
+
+
+.thumbnail-edited {
+  background-color: transparent;
+  border-style: none;
+}
+
+body{
+	background-color: #772222;
+	height: 100%;
+}
+
+
+/*color of the navbar*/
+.navbar-inverse{
+	background-color: #AB3838;
+}
+
+/*color of the navbar text*/
+.navbar-inverse .navbar-nav > li > a {
+  color: #FF7D7D;
+}
+
+/*color of the navbar test on mouse over*/
+.navbar-inverse .navbar-nav > .active > a{
+	background-color: #561818;
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+  color: #ffffff;
+  background-color: #561818;
+}
+
+#map{
+  width: 400px;
+	height: 300px;
+}
+
+.company-logo{
+	display:block;
+  margin:auto;
+}
+
+.bold{
+	font-weight:bold;
+}
+
+/* skill bars*/
+.skillbar {
+	position:relative;
+	display:block;
+	margin-bottom:15px;
+	width:100%;
+	background:#eee;
+	height:35px;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	-webkit-transition:0.4s linear;
+	-moz-transition:0.4s linear;
+	-ms-transition:0.4s linear;
+	-o-transition:0.4s linear;
+	transition:0.4s linear;
+	-webkit-transition-property:width, background-color;
+	-moz-transition-property:width, background-color;
+	-ms-transition-property:width, background-color;
+	-o-transition-property:width, background-color;
+	transition-property:width, background-color;
+}
+
+.skillbar-title {
+	position:absolute;
+	top:0;
+	left:0;
+	font-weight:bold;
+	font-size:13px;
+	color:#fff;
+	background:#6adcfa;
+	-webkit-border-top-left-radius:3px;
+	-webkit-border-bottom-left-radius:4px;
+	-moz-border-radius-topleft:3px;
+	-moz-border-radius-bottomleft:3px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+
+.skillbar-title span {
+	display:block;
+	background:rgba(0, 0, 0, 0.1);
+	padding:0 20px;
+	height:35px;
+	line-height:35px;
+	-webkit-border-top-left-radius:3px;
+	-webkit-border-bottom-left-radius:3px;
+	-moz-border-radius-topleft:3px;
+	-moz-border-radius-bottomleft:3px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+
+.skillbar-bar {
+	height:35px;
+	width:0px;
+	background:#6adcfa;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+}
+
+.skill-bar-percent {
+	position:absolute;
+	right:10px;
+	top:0;
+	font-size:11px;
+	height:35px;
+	line-height:35px;
+	color:#444;
+	color:rgba(0, 0, 0, 0.4);
+}
+/*language on dropdown*/
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+    background-color: #561818;
+}
+
+.navbar-inverse .navbar-nav .open .dropdown-menu > .active > a, .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:focus {
+    background-color: #561818;
+}
+
+.navbar-nav > li > .dropdown-menu {
+		background-color: #AB3838;
+}
+
+.dropdown-menu > li > a {
+    color: #FF7D7D;
+}
+
+/*timeline color*/
+#cd-timeline::before {
+    background: #C75454;
+}
+
+@media only screen and (max-width: 1169px){
+	.cd-timeline-img {
+	    width: 20px;
+	    height: 20px;
+			margin-top: 15px;
+			margin-left: 10px;
+	}
+}
+
+@media only screen and (max-width: 400px){
+	.cd-timeline-img {
+	    width: 20px;
+	    height: 20px;
+			margin-top: 15px;
+			margin-left: 10px;
+	}
+
+	.cd-container {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+	}
+
+	.cd-timeline-content {
+    margin-left: 40px;
+
+	}
+}
+
+/*color of the circle in the resume timeline*/
+.cd-timeline-img.cd-movie {
+    background: #AB3838;
+}
+
+label {
+    display:block;
+    margin-top:20px;
+    letter-spacing:2px;
+}
+
+/* Centre the form within the page */
+form {
+    margin:0 auto;
+    width:459px;
+}
+
+/* Style the text boxes */
+input, textarea {
+	width:439px;
+	height:27px;
+	background:#efefef;
+	border:1px solid #dedede;
+	padding:10px;
+	margin-top:3px;
+	font-size:0.9em;
+	color:#3a3a3a;
+}
+
+textarea {
+	height:60px;
+}
+
+input:focus, textarea:focus {
+    border:1px solid #97d6eb;
+}
+
+#submit{
+    width:127px;
+    height:38px;
+    border:none;
+    cursor:pointer;
+}
