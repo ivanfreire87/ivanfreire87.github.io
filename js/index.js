@@ -24,7 +24,7 @@ function translate_to(lang){
 	if(language == 'en'){
 		/*************************ENGLISH**********************************/
 		document.getElementById("about-text").innerHTML = " About"
-		document.getElementById("contacts-text").innerHTML = " Contacts"
+		document.getElementById("contacts-text").innerHTML = " Contact"
 		document.getElementById("resume-text").innerHTML = " Résumé"
 		document.getElementById("lang-text").innerHTML = " En"
 		document.getElementById("about-title").innerHTML = "About"
@@ -92,7 +92,7 @@ function translate_to(lang){
 	/*************************PORTUGUESE**********************************/
 	else{
 		document.getElementById("about-text").innerHTML = " Sobre"
-		document.getElementById("contacts-text").innerHTML = " Contactos"
+		document.getElementById("contacts-text").innerHTML = " Contacto"
 		document.getElementById("resume-text").innerHTML = " Currículo"
 		document.getElementById("lang-text").innerHTML = " Pt"
 		document.getElementById("about-title").innerHTML = "Sobre"
@@ -219,7 +219,7 @@ var skills_waypoint = new Waypoint({
 			},1500)
 		});
   },
-	offset: distance_a
+	offset: distance_b
 })
 
 /*change the active tab*/

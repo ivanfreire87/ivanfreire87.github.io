@@ -4,13 +4,12 @@
 	display: block;
 	float:left;
 	padding-top:10px;
-	padding-right:10px;
-	margin-right:10px;
-	padding-left:10px;
+	margin-right:30px;
 
 	padding-bottom:10px;
 	-webkit-filter: grayscale(100%);
 	filter: grayscale(100%);
+	-webkit-shape-outside:circle();
 }
 
 p.titles-margin{
@@ -184,6 +183,11 @@ body{
 	}
 }
 
+#skills-bars{
+	padding-right: 50px;
+	padding-left: 50px;
+}
+
 @media only screen and (max-width: 400px){
 	.cd-timeline-img {
 	    width: 20px;
@@ -202,9 +206,28 @@ body{
     margin-left: 40px;
 
 	}
+
+	#skills-bars{
+		padding-right: 5px;
+		padding-left: 5px;
+	}
 }
 
 /*color of the circle in the resume timeline*/
 .cd-timeline-img.cd-movie {
     background: #AB3838;
+}
+
+body {
+  background-color: #191919 !important!
+}
+
+.ch-info p {
+	color: #fff;
+	padding: 70px 5px;
+	font-size: 15px;
+}
+
+.lang-over{
+	cursor: pointer;
 }

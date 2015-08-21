@@ -4,8 +4,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="circle, border-radius, hover, css3, transition, image, thumbnail, effect, 3d" />
   <title>Ivan Freire - CV</title>
   <!-- css -->
+  <link rel="stylesheet" type="text/css" href="css/common.css" />
+  <link rel="stylesheet" type="text/css" href="css/style2.css" />
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700'>
   <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
@@ -13,7 +16,7 @@
   <link rel="stylesheet" href="css/index.css">
   <script src="js/modernizr.js"></script> <!-- Modernizr -->
 </head>
-<body class="hyphenate" style="text-align:justify;">
+<body style="text-align:left;">
   <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
     <div class="container">
       <!-- Brand and toggle get grouped for better mobile display -->
@@ -34,14 +37,14 @@
         <ul id="nav-menu" class="nav navbar-nav navbar-right">
           <li class="active"><a href="#about-data" id="about"><span class="glyphicon glyphicon-user"></span><span id="about-text"> Sobre</span><span class="sr-only"></span></a></li>
           <li><a href="#resume-data" id="resume"><span class="glyphicon glyphicon-book"></span><span id="resume-text"> Currículo</span></a></li>
-          <li><a href="#contacts-data" id="contacts"><span class="glyphicon glyphicon-envelope"></span><span id="contacts-text"> Contactos</span></a></li>
+          <li><a href="#contacts-data" id="contacts"><span class="glyphicon glyphicon-envelope"></span><span id="contacts-text"> Contacto</span></a></li>
           <li class="dropdown">
             <a id="lang" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
               <span class="glyphicon glyphicon-globe"></span><span id="lang-text"> Pt</span>
             </a>
             <ul class="dropdown-menu">
-              <li class="active"><a id="pt-lang">Pt</a></li>
-              <li><a id="en-lang">En</a></li>
+              <li class="active lang-over"><a id="pt-lang">Pt</a></li>
+              <li class="lang-over" ><a id="en-lang">En</a></li>
             </ul>
           </li>
         </ul>
@@ -58,15 +61,24 @@
           <div class="col-md-8">
             <div class="thumbnail thumbnail-edited">
               <div class="caption">
-                <img class="img-thumbnail mypic" src="pics/my-pic.jpg">
-                <p style="min-width: 10em; text-align:justify; color:#7f8c97; font-size:20px; line-height: 120%;">"<span id="about-sentence">
-                  O meu nome é Ivan Freire e sou licenciado em engenharia informática e de computadores. O interesse por esta área
+                <img class="img-circle mypic" src="pics/my-pic.jpg">
+                <p style="min-width: 10em; text-align:left; color:#7f8c97; font-size:20px; line-height: 120%;"><span id="about-sentence">
+                  O meu nome é Ivan Freire e sou licenciado em engenharia informática e de computadores.
+                </p>
+                <p style="text-align:left; color:#7f8c97; font-size:20px; line-height: 120%; margin-top:35px;">
+                  O interesse pela informática
                   despertou muito cedo, quando tive o meu primeiro computador e sempre que surgia algum problema com o mesmo eu tentava
-                  sempre resolvê-lo sozinho. Gostava de alterar o código fonte de páginas web para ver as alterações que ocorriam e fiz
-                  o meu primeiro site por volta dos 14 anos. Sempre fui curioso, com vontade de aprender e adoro desafios, tentando ser
-                  sempre o melhor possível no que faço, tanto a nível pessoal como profissional. Estas características pessoais
+                  sempre resolvê-lo sozinho.
+                </p>
+                <p style="min-width: 10em; text-align:left; color:#7f8c97; font-size:20px; line-height: 120%; margin-top:35px;">
+                  Gostava de alterar o código fonte de páginas web para ver as alterações que ocorriam e fiz
+                  o meu primeiro site por volta dos 14 anos.
+                </p>
+                <p style="min-width: 10em; text-align:left; color:#7f8c97; font-size:20px; line-height: 120%; margin-top:35px;">
+                  Sempre fui curioso, com vontade de aprender e adoro desafios, tentando ser
+                  o melhor possível no que faço, tanto a nível pessoal como profissional. Estas características pessoais
                   reflectiram-se no meu percurso académico pois, uma vez que este curso não disponibilizava regime pós-laboral,
-                  tive de aprender a maior parte das matérias sozinho enquanto conciliava o mesmo com o trabalho.</span>"
+                  tive de aprender a maior parte das matérias sozinho enquanto conciliava o mesmo com o trabalho.</span>
                 </p>
               </div>
             </div>
@@ -203,10 +215,10 @@
               </div> <!-- cd-timeline-block -->
             </section> <!-- cd-timeline -->
           </div>
-        </div> <!-- End Resume data -->
+        </div> <!-- End Col -->
 
-        <p id="skills" style="text-align:center; font-size:30px;"><br><br><br><br><span class="glyphicon glyphicon-pencil"></span>&nbsp&nbsp<span id="tech-skills">Competências Técnicas</span><br><br></p>
-        <div style="padding-right:50px; padding-left:50px;">
+        <p id="skills" style="text-align:center; font-size:30px;"><br><br><br><br><span class="glyphicon glyphicon-tasks"></span>&nbsp&nbsp<span id="tech-skills">Competências Técnicas</span><br><br></p>
+        <div id="skills-bars">
           <div class="skillbar clearfix " data-percent="90%">
             <div class="skillbar-title" style="background: #d35400;"><span>HTML5</span></div>
             <div class="skillbar-bar" style="background: #e67e22;"></div>
@@ -263,34 +275,194 @@
           </div> <!-- End Skill Bar -->
         </div>
 
-        <!-- Div used to mark the end of the resume section  -->
-        <div id="resume-data-end"></div>
-
-        <p id="skills" style="text-align:center; font-size:30px;"><br><br><br><br><span class="glyphicon glyphicon-home"></span>&nbsp&nbsp<span id="contacts">Contactos</span></p>
-        <div id="contacts-data" style="padding-top:60px;">
+        <p class="titles-margin" id="projects" style="text-align:center; font-size:30px;"><br><br><br><br><span class="glyphicon glyphicon-pencil"></span>&nbsp&nbsp<span id="tech-skills">Projectos</span><br><br></p>
+        <div style="padding-top:30px;">
           <div class="row">
-            <div class="col-md-6" style="max-width:400px; padding-bottom:30px; margin-left:30px; margin-right:30px;">
-              <div id="map" style="width:100%;height:300px;"></div>
-            </div>
-            <div class="col-md-4" >
-              <p style="font-size:15px;"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Oeiras, Portugal</p>
-              <p style="font-size:15px;"><span class="glyphicon glyphicon-phone" aria-hidden="true"></span>  9669696969</p>
-              <p style="font-size:15px;"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>  aiaiaiai@gmail.com</p>
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+              <div class="row">
+
+                <div class="col-md-4" style="margin-bottom:20px;">
+                  <p style="text-align:center; margin-bottom:-25px;">
+                    App Phonegap
+                  </p>
+                  <a href="https://github.com/ivanfreire87/Phonegap-App">
+                    <ul class="ch-grid">
+                      <li>
+                        <div class="ch-item ch-img-1">
+                          <div class="ch-info">
+                            <p>View on Github</p>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </a>
+                </a>
+              </div><!-- End Col -->
+
+              <div class="col-md-4" style="margin-bottom:20px;">
+                <p style="text-align:center; margin-bottom:-25px;">
+                  Artificial Intelligence
+                </p>
+                <a href="https://github.com/ivanfreire87/Artificial-Intelligence">
+                  <ul class="ch-grid">
+                    <li>
+                      <div class="ch-item ch-img-2">
+                        <div class="ch-info">
+                          <p>View on Github</p>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </a>
+              </div><!-- End Col -->
+
+              <div class="col-md-4" style="margin-bottom:20px;">
+                <p style="text-align:center; margin-bottom:-25px;">
+                  Barista
+                </p>
+                <a href="https://github.com/ivanfreire87/Barista">
+                  <ul class="ch-grid">
+                    <li>
+                      <div class="ch-item ch-img-3">
+                        <div class="ch-info">
+                          <p>View on Github</p>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </a>
+              </div><!-- End Col -->
+
+            </div><!-- End Row 1 -->
+            <div class="row">
+              <div class="col-md-4" style="margin-bottom:20px;">
+                <p style="text-align:center; margin-bottom:-25px;">
+                  Chilrear
+                </p>
+                <a href="https://github.com/ivanfreire87/Chilrear">
+                  <ul class="ch-grid">
+                    <li>
+                      <div class="ch-item ch-img-4">
+                        <div class="ch-info">
+                          <p>View on Github</p>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </a>
+              </div><!-- End Col -->
+
+              <div class="col-md-4" style="margin-bottom:20px;">
+                <p style="text-align:center; margin-bottom:-25px;">
+                  Minijava Compiler
+                </p>
+                <a href="https://github.com/ivanfreire87/Minijava-Compiler">
+                  <ul class="ch-grid">
+                    <li>
+                      <div class="ch-item ch-img-5">
+                        <div class="ch-info">
+                          <p>View on Github</p>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </a>
+              </div><!-- End Col -->
+
+              <div class="col-md-4" style="margin-bottom:20px;">
+                <p style="text-align:center; margin-bottom:-25px;">
+                  Operating Systems
+                </p>
+                <a href="https://github.com/ivanfreire87/Operating-Systems">
+                  <ul class="ch-grid">
+                    <li>
+                      <div class="ch-item ch-img-6">
+                        <div class="ch-info">
+                          <p>View on Github</p>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </a>
+              </div><!-- End Col -->
+
+            </div><!-- End Row 2 -->
+            <div class="row">
+              <div class="col-md-2"></div>
+              <div class="col-md-4" style="margin-bottom:20px;">
+                <p style="text-align:center; margin-bottom:-25px;">
+                  Pacman
+                </p>
+                <a href="https://github.com/ivanfreire87/Pacman">
+                  <ul class="ch-grid">
+                    <li>
+                      <div class="ch-item ch-img-7">
+                        <div class="ch-info">
+                          <p>View on Github</p>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </a>
+              </div><!-- End Col -->
+
+              <div class="col-md-4" style="margin-bottom:20px;">
+                <p style="text-align:center; margin-bottom:-25px;">
+                  Tarjan Algorithm
+                </p>
+                <a href="https://github.com/ivanfreire87/Tarjan-Algorithm">
+                  <ul class="ch-grid">
+                    <li>
+                      <div class="ch-item ch-img-8">
+                        <div class="ch-info">
+                          <p>View on Github</p>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </a>
+              </div><!-- End Col -->
+
+              <div class="col-md-2"></div>
+            </div><!-- End Row 3 -->
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+      </div>
+
+      <!-- Div used to mark the end of the resume section  -->
+      <div id="resume-data-end"></div>
+
+      <p class="titles-margin" id="skills" style="text-align:center; font-size:30px;"><br><br><br><br><span class="glyphicon glyphicon-home"></span>&nbsp&nbsp<span id="contacts">Contacto</span></p>
+      <div id="contacts-data" style="padding-top:30px;">
+        <div class="row">
+          <div class="col-md-2"></div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-5" style="max-width:400px; padding-bottom:30px; margin-left:30px; margin-right:30px;">
+                <div id="map" style="width:100%;height:250px;"></div>
+              </div>
+              <div class="col-md-5" >
+                <p style="font-size:15px;"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Oeiras, Portugal</p>
+                <p style="font-size:15px;"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>  ivanfreire87@gmail.com</p>
+              </div>
             </div>
           </div>
-        </div><!-- End Contact Data -->
-      </div><!-- End Page -->
-    </div><!-- End Container -->
+          <div class="col-md-2"></div>
+        </div>
+      </div><!-- End Contact Data -->
+    </div><!-- End Page -->
+  </div><!-- End Container -->
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js"></script>
-    <script src=http://hyphenator.googlecode.com/svn/tags/Version%204.2.0/Hyphenator.js></script>
-    <script>Hyphenator.run();</script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script> <!-- Resource jQuery -->
-    <script src="waypoints/lib/noframework.waypoints.min.js"></script>
-    <script src="js/index.js"></script>
-  </body>
-  </html>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js"></script>
+
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script> <!-- Resource jQuery -->
+  <script src="waypoints/lib/noframework.waypoints.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>
