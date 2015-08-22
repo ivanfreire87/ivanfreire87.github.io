@@ -216,7 +216,10 @@ $("#nav-menu li a").click(function() {
 });
 
 $('a').click(function(){
-	var distance = $( $.attr(this, 'href') ).offset().top - 200
+
+	if($(this).attr('id') != "pt-lang" && $(this).attr('id') != "en-lang" && $(this).attr('id') != "lang"){
+		var distance = $( $.attr(this, 'href') ).offset().top - 200
+	}
 	about_waypoint.disable()
 	resume_top_waypoint.disable()
 	resume_bot_waypoint.disable()
@@ -229,13 +232,11 @@ $('a').click(function(){
 		resume_bot_waypoint.enable()
 		contacts_waypoint.enable()
   });
-
-	return false;
 });
 
 var distance_a = Math.max(document.documentElement.clientHeight, window.innerHeight || 0) - 600
 var distance_b = Math.max(document.documentElement.clientHeight, window.innerHeight || 0) - 400
-var distance_c = Math.max(document.documentElement.clientHeight, window.innerHeight || 0) - 300
+var distance_c = Math.max(document.documentElement.clientHeight, window.innerHeight || 0) - 200
 
 var skills_waypoint = new Waypoint({
   element: document.getElementById('skills'),
