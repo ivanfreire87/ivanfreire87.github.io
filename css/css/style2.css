@@ -1,0 +1,136 @@
+.ch-item {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	position: relative;
+	cursor: pointer;
+	box-shadow:
+
+		inset 0 0 0 5px rgba(255,255,255,0.5),
+		0 1px 2px rgba(0,0,0,0.1);
+
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+}
+
+.ch-img-1 {
+	background-size: cover;
+	background-image: url(../pics/phonegap-pic.png);
+}
+
+.ch-img-2 {
+	background-size: cover;
+	background-image: url(../pics/ai-pic.png);
+}
+
+.ch-img-3 {
+	background-size: cover;
+	background-image: url(../pics/barista-pic.png);
+}
+
+.ch-img-4 {
+	background-size: cover;
+	background-image: url(../pics/chilrear-pic.png);
+}
+
+.ch-img-5 {
+	background-size: cover;
+	background-image: url(../pics/minijava-pic.png);
+}
+
+.ch-img-6 {
+	background-size: cover;
+	background-image: url(../pics/os-pic.png);
+}
+
+.ch-img-7 {
+	background-size: cover;
+	background-image: url(../pics/pacman-pic.png);
+}
+
+.ch-img-8 {
+	background-size: cover;
+	background-image: url(../pics/tarjan-pic.png);
+}
+
+
+.ch-info {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+
+	-webkit-transform: scale(0);
+	-moz-transform: scale(0);
+	-o-transform: scale(0);
+	-ms-transform: scale(0);
+	transform: scale(0);
+
+	-webkit-backface-visibility: hidden; /*for a smooth font */
+
+}
+
+.ch-info h3 {
+	color: #fff;
+	text-transform: uppercase;
+	position: relative;
+	letter-spacing: 2px;
+	font-size: 5px;
+	margin: 0 30px;
+	padding: 0 0 0 0;
+	height: 110px;
+	text-shadow:
+		0 0 1px #fff,
+		0 1px 2px rgba(0,0,0,0.3);
+}
+
+.ch-info p {
+	color: #fff;
+	padding: 15px 5px;
+	font-size: 5px;
+}
+
+.ch-info p a {
+	display: block;
+	color: #fff;
+	color: rgba(255,255,255,0.7);
+	font-style: normal;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 5px;
+	letter-spacing: 1px;
+	padding-top: 4px;
+}
+
+
+
+.ch-item {
+	box-shadow:
+		inset 0 0 0 110px rgba(0,0,0,0.5),
+}
+
+.ch-item:hover {
+	text-transform: uppercase;
+	box-shadow:
+		inset 0 0 0 5px rgba(255,255,255,0.45),
+		inset 0 0 0 110px rgba(0,0,0,0.5),
+}
+
+.ch-item .ch-info {
+	opacity: 1;
+
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-o-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+}
