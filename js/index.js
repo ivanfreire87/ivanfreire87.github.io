@@ -72,7 +72,7 @@ function translate_to(lang){
 
 		document.getElementById("telemarketer").innerHTML = "Lead Generation Telemarketer"
 		document.getElementById("telemarketer-text").innerHTML = "I was involved in two projects which consisted in presenting" +
-		" solutions to a selected range of companies. Interested companies were marked as a ‘Lead’ and would then be contacted" +
+		" solutions to a selected range of companies. Interested companies were marked as a ‘Lead’ and would then be contacted by the client company" +
 		" to schedule a meeting, where the solutions would be presented in person."
 		document.getElementById("telemarketer-text2").innerHTML = "1st project - Oracle: Presentation of solutions for databases referencing" +
 		" features like data recovery, security against attacks (e.g. sql injections), concurrency control, etc"
