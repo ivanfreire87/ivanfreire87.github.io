@@ -1,4 +1,5 @@
 var language = 'pt'
+var pending = 0;
 
 function initialize() {
 	var mapCanvas = document.getElementById('map');
@@ -215,24 +216,29 @@ $("#nav-menu li a").click(function() {
 	}
 });
 
-$('a').click(function(){
-
-	if($(this).attr('id') != "pt-lang" && $(this).attr('id') != "en-lang" && $(this).attr('id') != "lang"){
-		var distance = $( $.attr(this, 'href') ).offset().top - 200
+$('a').click(function(event){
+	event.preventDefault();
+	if(pending == 0){
+		pending = 1;
+		if($(this).attr('id') != "pt-lang" && $(this).attr('id') != "en-lang" && $(this).attr('id') != "lang"){
+			var distance = $( $.attr(this, 'href') ).offset().top - 200
+		}
+		about_waypoint.disable()
+		resume_top_waypoint.disable()
+		resume_bot_waypoint.disable()
+		contacts_waypoint.disable()
+		$('html, body').animate({
+			scrollTop: distance
+		}, 500, function() {
+			about_waypoint.enable()
+			resume_top_waypoint.enable()
+			resume_bot_waypoint.enable()
+			contacts_waypoint.enable()
+			pending = 0;
+	  });
 	}
-	about_waypoint.disable()
-	resume_top_waypoint.disable()
-	resume_bot_waypoint.disable()
-	contacts_waypoint.disable()
-	$('html, body').animate({
-		scrollTop: distance
-	}, 500, function() {
-		about_waypoint.enable()
-		resume_top_waypoint.enable()
-		resume_bot_waypoint.enable()
-		contacts_waypoint.enable()
-  });
 });
+
 
 var distance_a = Math.max(document.documentElement.clientHeight, window.innerHeight || 0) - 600
 var distance_b = Math.max(document.documentElement.clientHeight, window.innerHeight || 0) - 400
