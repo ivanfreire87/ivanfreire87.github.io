@@ -73,7 +73,7 @@ function translate_to(lang){
 		document.getElementById("telemarketer").innerHTML = "Lead Generation Telemarketer"
 		document.getElementById("telemarketer-text").innerHTML = "I was involved in two projects which consisted in presenting" +
 		" solutions to a selected range of companies. Interested companies were marked as a ‘Lead’ and would then be contacted" +
-		" by the Oracle to schedule a meeting, where the solutions would be presented in person."
+		" to schedule a meeting, where the solutions would be presented in person."
 		document.getElementById("telemarketer-text2").innerHTML = "1st project - Oracle: Presentation of solutions for databases referencing" +
 		" features like data recovery, security against attacks (e.g. sql injections), concurrency control, etc"
 		document.getElementById("telemarketer-text3").innerHTML = "2nd project - Critical Software: providing solutions for control and" +
@@ -152,7 +152,7 @@ function translate_to(lang){
 
 		document.getElementById("telemarketer").innerHTML = "Operador de Telemarketing Lead Generation"
 		document.getElementById("telemarketer-text").innerHTML = "Estive envolvido em dois projectos que consistiam na apresentação de soluções a um leque" +
-		" seleccionado de empresas. As empresas interessadas eram marcadas como uma 'Lead' e seriam posteriormente contactadas pela Oracle" +
+		" seleccionado de empresas. As empresas interessadas eram marcadas como uma 'Lead' e seriam posteriormente contactadas" +
 		" para marcação de uma reunião, onde seriam apresentadas as soluções presencialmente."
 		document.getElementById("telemarketer-text2").innerHTML = "1º projecto - Oracle: apresentação de soluções para bases de dados referenciando" +
 		" funcionalidades como a recuperação de dados, segurança contra ataques (e.g. injecções de sql), controle de concorrência, etc."
@@ -283,7 +283,7 @@ var resume_bot_waypoint = new Waypoint({
 		$('#resume').parent().addClass('active').siblings().removeClass('active');
 		document.activeElement.blur()
   },
-	offset: distance_b
+	offset: distance_c
 })
 
 /*contacts*/
