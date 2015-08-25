@@ -1,4 +1,5 @@
 var language = 'pt'
+var pending = 0;
 
 function initialize() {
 	var mapCanvas = document.getElementById('map');
@@ -51,7 +52,7 @@ function translate_to(lang){
 		document.getElementById("internship-text").innerHTML = "The internship lasted a month during which I was in charge of" +
 		" individually developing a mobile application in which it would be possible to consult" +
     " company news, check the current value of the meal card, mark absences and check whether they have been accepted and consult a chart" +
-    " with all the absences with the possibility of adding filters to it(absence type, date, approved or pending, etc.)." +
+    " with all the absences with the possibility of adding filters to it (absence type, date, approved, pending or rejected)." +
     " It was an enriching experience that allowed me to see the professional environment of an IT company."
 		document.getElementById("technology-used").innerHTML = "Technology used:"
 		document.getElementById("internship-evaluation").innerHTML = "Internship evaluation:"
@@ -71,8 +72,8 @@ function translate_to(lang){
 
 		document.getElementById("telemarketer").innerHTML = "Lead Generation Telemarketer"
 		document.getElementById("telemarketer-text").innerHTML = "I was involved in two projects which consisted in presenting" +
-		" solutions to a selected range of companies. Interested companies were marked as a ‘Lead’ and would then be contacted" +
-		" by the Oracle to schedule a meeting, where the solutions would be presented in person."
+		" solutions to a selected range of companies. Interested companies were marked as a ‘Lead’ and would then be contacted by the client company" +
+		" to schedule a meeting, where the solutions would be presented in person."
 		document.getElementById("telemarketer-text2").innerHTML = "1st project - Oracle: Presentation of solutions for databases referencing" +
 		" features like data recovery, security against attacks (e.g. sql injections), concurrency control, etc"
 		document.getElementById("telemarketer-text3").innerHTML = "2nd project - Critical Software: providing solutions for control and" +
@@ -133,7 +134,7 @@ function translate_to(lang){
 		" de desenvolver individualmente uma aplicação móvel na qual fosse possível consultar" +
     " notícias da empresa, verificar o valor actual do cartão de refeição, marcar ausências e verificar se as mesmas foram aceites" +
 		" e consultar um gráfico com todas as ausências até à data e com a possibilidade de adicionar filtros ao mesmo (tipo de ausência," +
-		" data, aprovada ou pendente, etc). Foi uma experiência enriquecedora que me deu a conhecer o ambiente profissional de uma empresa de IT."
+		" data, aprovada, pendente ou rejeitada). Foi uma experiência enriquecedora que me deu a conhecer o ambiente profissional de uma empresa de IT."
 		document.getElementById("technology-used").innerHTML = "Tecnologias utilizadas:"
 		document.getElementById("internship-evaluation").innerHTML = "Avaliação de estágio:"
 		document.getElementById("internship-evaluation-value").innerHTML = "Muito Bom"
@@ -151,7 +152,7 @@ function translate_to(lang){
 
 		document.getElementById("telemarketer").innerHTML = "Operador de Telemarketing Lead Generation"
 		document.getElementById("telemarketer-text").innerHTML = "Estive envolvido em dois projectos que consistiam na apresentação de soluções a um leque" +
-		" seleccionado de empresas. As empresas interessadas eram marcadas como uma 'Lead' e seriam posteriormente contactadas pela Oracle" +
+		" seleccionado de empresas. As empresas interessadas eram marcadas como uma 'Lead' e seriam posteriormente contactadas" +
 		" para marcação de uma reunião, onde seriam apresentadas as soluções presencialmente."
 		document.getElementById("telemarketer-text2").innerHTML = "1º projecto - Oracle: apresentação de soluções para bases de dados referenciando" +
 		" funcionalidades como a recuperação de dados, segurança contra ataques (e.g. injecções de sql), controle de concorrência, etc."
@@ -215,27 +216,67 @@ $("#nav-menu li a").click(function() {
 	}
 });
 
-$('a').click(function(){
-	var distance = $( $.attr(this, 'href') ).offset().top - 200
-	about_waypoint.disable()
-	resume_top_waypoint.disable()
-	resume_bot_waypoint.disable()
-	contacts_waypoint.disable()
-	$('html, body').animate({
-		scrollTop: distance
-	}, 500, function() {
-		about_waypoint.enable()
-		resume_top_waypoint.enable()
-		resume_bot_waypoint.enable()
-		contacts_waypoint.enable()
-  });
+//PROJECT LINKS
+$('.project-button').click(function(){
+	button = $(this).attr('id')
 
-	return false;
+	switch(button){
+		case "phonegap-button":
+			window.location = "https://github.com/ivanfreire87/Phonegap-App"
+			break
+		case "ai-button":
+			window.location = "https://github.com/ivanfreire87/Artificial-Intelligence"
+			break
+		case "barista-button":
+			window.location = "https://github.com/ivanfreire87/Barista"
+			break
+		case "chilrear-button":
+			window.location = "https://github.com/ivanfreire87/Chilrear"
+			break
+		case "minijava-button":
+			window.location = "https://github.com/ivanfreire87/Minijava-Compiler"
+			break
+		case "os-button":
+			window.location = "https://github.com/ivanfreire87/Operating-Systems"
+			break
+		case "pacman-button":
+			window.location = "https://github.com/ivanfreire87/Pacman"
+			break
+		case "tarjan-button":
+			window.location = "https://github.com/ivanfreire87/Tarjan-Algorithm"
+			break
+	}
 });
+
+$('a').click(function(event){
+	event.preventDefault()
+	if(pending == 0){
+		pending = 1;
+		if($(this).attr('id') != "pt-lang" && $(this).attr('id') != "en-lang" && $(this).attr('id') != "lang"){
+			var distance = $( $.attr(this, 'href') ).offset().top - 200
+		}
+		about_waypoint.disable()
+		resume_top_waypoint.disable()
+		resume_bot_waypoint.disable()
+		contacts_waypoint.disable()
+		$('html, body').animate({
+			scrollTop: distance
+		}, 500, function() {
+			about_waypoint.enable()
+			resume_top_waypoint.enable()
+			resume_bot_waypoint.enable()
+			contacts_waypoint.enable()
+			pending = 0;
+	  });
+	}
+
+	return true;
+});
+
 
 var distance_a = Math.max(document.documentElement.clientHeight, window.innerHeight || 0) - 600
 var distance_b = Math.max(document.documentElement.clientHeight, window.innerHeight || 0) - 400
-var distance_c = Math.max(document.documentElement.clientHeight, window.innerHeight || 0) - 300
+var distance_c = Math.max(document.documentElement.clientHeight, window.innerHeight || 0) - 200
 
 var skills_waypoint = new Waypoint({
   element: document.getElementById('skills'),
@@ -276,7 +317,7 @@ var resume_bot_waypoint = new Waypoint({
 		$('#resume').parent().addClass('active').siblings().removeClass('active');
 		document.activeElement.blur()
   },
-	offset: distance_b
+	offset: distance_c
 })
 
 /*contacts*/
