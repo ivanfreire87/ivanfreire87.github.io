@@ -201,11 +201,11 @@ $('#pt-lang').click(function () {
 	}
 })
 
-$(document).on('click','.navbar-collapse',function(e) {
+$(document).on('click','.navbar-collapse',function() {
 		$(this).collapse('hide');
 });
 
-$(document).on('click','.navbar-toggle',function(e) {
+$(document).on('click','.navbar-toggle',function() {
 		$(this).blur()
 });
 
@@ -269,8 +269,6 @@ $('a').click(function(event){
 			pending = 0;
 	  });
 	}
-
-	return true;
 });
 
 
