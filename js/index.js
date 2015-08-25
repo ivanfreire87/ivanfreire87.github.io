@@ -52,7 +52,7 @@ function translate_to(lang){
 		document.getElementById("internship-text").innerHTML = "The internship lasted a month during which I was in charge of" +
 		" individually developing a mobile application in which it would be possible to consult" +
     " company news, check the current value of the meal card, mark absences and check whether they have been accepted and consult a chart" +
-    " with all the absences with the possibility of adding filters to it(absence type, date, approved or pending, etc.)." +
+    " with all the absences with the possibility of adding filters to it (absence type, date, approved, pending or rejected)." +
     " It was an enriching experience that allowed me to see the professional environment of an IT company."
 		document.getElementById("technology-used").innerHTML = "Technology used:"
 		document.getElementById("internship-evaluation").innerHTML = "Internship evaluation:"
@@ -134,7 +134,7 @@ function translate_to(lang){
 		" de desenvolver individualmente uma aplicação móvel na qual fosse possível consultar" +
     " notícias da empresa, verificar o valor actual do cartão de refeição, marcar ausências e verificar se as mesmas foram aceites" +
 		" e consultar um gráfico com todas as ausências até à data e com a possibilidade de adicionar filtros ao mesmo (tipo de ausência," +
-		" data, aprovada ou pendente, etc). Foi uma experiência enriquecedora que me deu a conhecer o ambiente profissional de uma empresa de IT."
+		" data, aprovada, pendente ou rejeitada). Foi uma experiência enriquecedora que me deu a conhecer o ambiente profissional de uma empresa de IT."
 		document.getElementById("technology-used").innerHTML = "Tecnologias utilizadas:"
 		document.getElementById("internship-evaluation").innerHTML = "Avaliação de estágio:"
 		document.getElementById("internship-evaluation-value").innerHTML = "Muito Bom"
@@ -201,11 +201,11 @@ $('#pt-lang').click(function () {
 	}
 })
 
-$(document).on('click','.navbar-collapse',function(e) {
+$(document).on('click','.navbar-collapse',function() {
 		$(this).collapse('hide');
 });
 
-$(document).on('click','.navbar-toggle',function(e) {
+$(document).on('click','.navbar-toggle',function() {
 		$(this).blur()
 });
 
@@ -216,8 +216,40 @@ $("#nav-menu li a").click(function() {
 	}
 });
 
+//PROJECT LINKS
+$('.project-button').click(function(){
+	button = $(this).attr('id')
+
+	switch(button){
+		case "phonegap-button":
+			window.location = "https://github.com/ivanfreire87/Phonegap-App"
+			break
+		case "ai-button":
+			window.location = "https://github.com/ivanfreire87/Artificial-Intelligence"
+			break
+		case "barista-button":
+			window.location = "https://github.com/ivanfreire87/Barista"
+			break
+		case "chilrear-button":
+			window.location = "https://github.com/ivanfreire87/Chilrear"
+			break
+		case "minijava-button":
+			window.location = "https://github.com/ivanfreire87/Minijava-Compiler"
+			break
+		case "os-button":
+			window.location = "https://github.com/ivanfreire87/Operating-Systems"
+			break
+		case "pacman-button":
+			window.location = "https://github.com/ivanfreire87/Pacman"
+			break
+		case "tarjan-button":
+			window.location = "https://github.com/ivanfreire87/Tarjan-Algorithm"
+			break
+	}
+});
+
 $('a').click(function(event){
-	event.preventDefault();
+	event.preventDefault()
 	if(pending == 0){
 		pending = 1;
 		if($(this).attr('id') != "pt-lang" && $(this).attr('id') != "en-lang" && $(this).attr('id') != "lang"){
