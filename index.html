@@ -1,478 +1,118 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="keywords" content="circle, border-radius, hover, css3, transition, image, thumbnail, effect, 3d" />
-  <title>Ivan Freire - CV</title>
-  <!-- css -->
-  <link rel="stylesheet" type="text/css" href="css/common.css" />
-  <link rel="stylesheet" type="text/css" href="css/style2.css" />
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700'>
-  <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
-  <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
-  <link rel="stylesheet" href="css/index.css">
-  <script src="js/modernizr.js"></script> <!-- Modernizr -->
-</head>
-<body style="text-align:left;">
-  <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
-    <div class="container">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" style="color: #FFFFFF;">Ivan Freire</a>
-      </div>
+<!-- saved from url=(0039)http://getbootstrap.com/examples/cover/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul id="nav-menu" class="nav navbar-nav navbar-right">
-          <li class="active"><a href="#about-data" id="about"><span class="glyphicon glyphicon-user"></span><span id="about-text"> Sobre</span><span class="sr-only"></span></a></li>
-          <li><a href="#resume-data" id="resume"><span class="glyphicon glyphicon-book"></span><span id="resume-text"> Currículo</span></a></li>
-          <li><a href="#contacts-data" id="contacts"><span class="glyphicon glyphicon-envelope"></span><span id="contacts-text"> Contacto</span></a></li>
-          <li class="dropdown">
-            <a id="lang" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-              <span class="glyphicon glyphicon-globe"></span><span id="lang-text"> Pt</span>
-            </a>
-            <ul class="dropdown-menu">
-              <li id="pt-lang-button" class="active lang-over"><a id="pt-lang">Pt</a></li>
-              <li id="en-lang-button" class="lang-over" ><a id="en-lang">En</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div><!-- /.navbar-collapse -->
-    </div><!-- /.container -->
-  </nav>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <div class="container">
-    <div id="page" class="jumbotron" style="margin-top:68px; padding:10px; margin-bottom:30px;">
-      <!-- About -->
-      <div id="about-data" style="margin-bottom:100px; margin-top:50px;">
-        <p class="titles-margin" style="text-align:center; font-size:30px;"><br><span class="glyphicon glyphicon-user"></span>&nbsp&nbsp<span id="about-title">Sobre</span></p>
-        <div class="row">
-          <div class="col-md-2"></div>
-          <div class="col-md-8">
-            <div class="thumbnail thumbnail-edited">
-              <div class="caption">
-                <img class="img-circle mypic" src="pics/my-pic.jpg">
-                <p style="text-align:left; color:#7f8c97; font-size:20px; line-height: 120%;">
-                  <span id="about-sentence">
-                    O meu nome é Ivan Freire e sou licenciado em engenharia informática e de computadores.
-                  </span>
-                </p>
-                <p style="text-align:left; color:#7f8c97; font-size:20px; line-height: 120%; margin-top:35px;">
-                  <span id="about-sentence2">
-                    O interesse pela informática despertou muito cedo, quando tive o meu primeiro computador e
-                    sempre que surgia algum problema com o mesmo eu tentava sempre resolvê-lo sozinho.
-                  </span>
-                </p>
-                <p style="text-align:left; color:#7f8c97; font-size:20px; line-height: 120%; margin-top:35px;">
-                  <span id="about-sentence3">
-                    Gostava de alterar o código fonte de páginas web para ver as alterações que ocorriam e fiz
-                    o meu primeiro site por volta dos 14 anos.
-                  </span>
-                </p>
-                <p style="text-align:left; color:#7f8c97; font-size:20px; line-height: 120%; margin-top:35px;">
-                  <span id="about-sentence4">
-                    Sempre fui curioso, com vontade de aprender e adoro desafios, tentando ser o melhor possível
-                    no que faço, tanto a nível pessoal como profissional. Estas características pessoais reflectiram-se
-                    no meu percurso académico pois, uma vez que este curso não disponibilizava regime pós-laboral,
-                    tive de aprender a maior parte das matérias sozinho enquanto conciliava o mesmo com o trabalho.
-                  </span>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-2"></div>
-        </div>
-      </div><!-- End About Data -->
+    <title>Living Page</title>
 
-      <!-- Resume Data -->
-      <div id="resume-data">
+    <!-- CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 
-        <!-- Education -->
-        <p style="text-align:center; font-size:30px; "><br><span class="glyphicon glyphicon-education"></span>&nbsp&nbsp<span id="education-text">Educação</span></p>
-        <div id="education" style="margin-bottom:100px; margin-top:60px;">
-          <div id="ist">
-            <div>
-              <img class="img-square" src="pics/ist-logo.png" style="display:block; margin-left:auto; margin-right:auto;">
-            </div>
-            <div style="margin-top:15px;">
-              <p style="text-align:center;"><span style="color:#303e49; font-weight:bold;">Instituto Superior Técnico</span><br><br><span id="bachelor">Licenciatura em Engenharia Informática e de Computadores</span><br><br></p>
-            </div>
-          </div><!-- End Ist> -->
+    <!-- JS -->
+    <script src="js/script.js"></script>
+    <script src="js/Tangle.js"></script>
+    <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script src="js/function-plot.js"></script>
+    <script src="js/ntc.js"></script>
 
-          <div id="eslfb">
-            <div style="margin-top:30px;">
-              <img class="img-square" src="pics/eslfb-logo.png" style="display:block; margin-left:auto; margin-right:auto;">
-            </div>
-            <div style="margin-top:15px;">
-              <p style="text-align:center;"><span style="color:#303e49; font-weight:bold;">Escola Secundária Luís de Freitas Branco</span><br><br><span id="12th-grade">12º Ano de Escolaridade</span><br></p>
-            </div>
-          </div><!-- End Eslfb> -->
-        </div><!-- End Education> -->
+    <!-- TangleKit (optional) -->
+    <link rel="stylesheet" href="TangleKit/TangleKit.css" type="text/css">
+    <script type="text/javascript" src="TangleKit/mootools.js"></script>
+    <script type="text/javascript" src="TangleKit/sprintf.js"></script>
+    <script type="text/javascript" src="TangleKit/BVTouchable.js"></script>
+    <script type="text/javascript" src="TangleKit/TangleKit.js"></script>
 
-        <!-- Professional Experience -->
-        <p style="text-align:center; font-size:30px;"><br><span class="glyphicon glyphicon-file"></span>&nbsp&nbsp<span id="experience">Experiência Profissional</span><br></p>
-        <div style="margin-top:60px;">
-          <section id="cd-timeline" class="cd-container">
-            <div class="cd-timeline-block">
-              <div class="cd-timeline-img cd-movie">
-              </div>
+  </head>
 
-              <div class="cd-timeline-content">
-                <img class="company-logo" src="pics/everis-logo.png">
-                <h2><br><span id="internship">Estágio de verão<span></h2>
-                  <p><span class="bold">Everis</span></p>
-                  <p>01/07/2014 - 31/07/2014</p>
-
-                  <p><span id="internship-text">O estágio teve a duração de um mês durante o qual estive encarregue de desenvolver individualmente uma aplicação móvel na qual fosse possível consultar
-                    notícias da empresa, verificar o valor actual do cartão de refeição, marcar ausências e verificar se as mesmas foram aceites e consultar um gráfico
-                    com todas as ausências até à data e com a possibilidade de adicionar filtros ao mesmo (tipo de ausência, data, aprovada, pendente ou rejeitada).
-                    Foi uma experiência enriquecedora que me deu a conhecer o ambiente profissional de uma empresa de IT.</span>
-                  </p>
-                  <p><span id="technology-used" class="bold">Tecnologias utilizadas:</span> Phonegap/Cordova, HTML, CSS, Javascript, SQL, Web Services, Mobile Service</p>
-                  <p><span id="internship-evaluation" class="bold">Avaliação de estágio:</span> <span id="internship-evaluation-value">Muito Bom</span></p>
-                  <span id="internship-date" class="cd-date">Julho 2014</span>
-                </div> <!-- cd-timeline-content -->
-              </div> <!-- cd-timeline-block -->
-
-              <div class="cd-timeline-block">
-                <div class="cd-timeline-img cd-movie">
-                </div>
-
-                <div class="cd-timeline-content">
-                  <img class="company-logo" src="pics/mcall-logo.png">
-                  <h2><br><span id="teleoperator">Teleoperador</span></h2>
-                  <p><span class="bold">Mcall</span></p>
-                  <p>01/07/2013 - 28/02/2015</p>
-                  <p><span id="mcall-text">Durante cerca de um ano e meio tive como principal objectivo contactar clientes High Value do Clube Nespresso com o intuito de verificar
-                    o seu grau de satisfação, presenteando-os com acessórios e informando-os sobre novos aromas e edições limitadas
-                    disponíveis. Efectuava também o registo de novos membros e fazia marcações para reparação de máquinas.</span>
-                  </p>
-                  <p><span id="mcall-text2">Com o mesmo objetivo principal, contactava também membros do Clube de Vinhos e Sabores.</span>
-                    <p><span id="goals-achieved"class="bold">Objectivos alcançados: </span> <span id="goals-achieved-text">Classificação em 1º lugar em competição de vendas do Clube
-                      de Vinhos e Sabores.</span></p>
-                    </p>
-
-                    <span id="teleoperator-date" class="cd-date">Julho 2013</span>
-                  </div> <!-- cd-timeline-content -->
-                </div> <!-- cd-timeline-block -->
-
-                <div class="cd-timeline-block">
-                  <div class="cd-timeline-img cd-movie">
-                  </div>
-
-                  <div class="cd-timeline-content">
-                    <img class="company-logo" src="pics/leadmarket-logo.png">
-                    <h2><br><span id="telemarketer">Operador de Telemarketing Lead Generation</span></h2>
-                    <p><span class="bold">Lead Market</span></p>
-                    <p>01/02/2013 - 31/05/2013</p>
-                    <p><span id="telemarketer-text">Estive envolvido em dois projectos que consistiam na apresentação de soluções a um leque seleccionado de empresas. As empresas
-                      interessadas eram marcadas como uma "Lead" e seriam posteriormente contactadas pela empresa cliente para marcação de uma reunião,
-                      onde seriam apresentadas as soluções presencialmente.</span>
-                    </p>
-                    <p><span id="telemarketer-text2">1º projecto - Oracle: apresentação de soluções para bases de dados referenciando funcionalidades como a recuperação de dados,
-                      segurança contra ataques (por exemplo contra injecções de sql), controle de concorrência, etc.</span>
-                    </p>
-                    <p><span id="telemarketer-text3">2º projecto - Critical Software: apresentação de soluções para controle e manutenção de parques de energia eólica e solar.</span>
-                    </p>
-
-                    <span id="telemarketer-date" class="cd-date">Fevereiro 2013</span>
-                  </div> <!-- cd-timeline-content -->
-                </div> <!-- cd-timeline-block -->
-
-                <div class="cd-timeline-block">
-                  <div class="cd-timeline-img cd-movie">
-                  </div>
-
-                  <div class="cd-timeline-content">
-                    <img class="company-logo" src="pics/pt-logo.png">
-                    <h2><br><span id="pt-sales">Gestor Comercial D2D</span></h2>
-                    <p><span class="bold">Portugal Telecom</span></p>
-                    <p>01/07/2012 - 30/10/2012</p>
-                    <p><span id="pt-sales-text">Fiz parte da equipa alfa da Portugal Telecom, efectuando a venda presencial de produtos meo e sapo e ficando encarregue de uma carteira
-                      de clientes. Era necessário um acompanhamento desde a assinatura do contracto, instalação e activação do serviço e durante as primeiras
-                      semanas, para garantir a total satisfação do novo cliente.</span>
-                    </p>
-                    <p><span id="pt-sales-goals" class="bold">Objectivos alcançados: </span> <span id="pt-sales-goals-text">Classificação em 2º lugar no top de vendas do mês de Agosto.</span></p>
-                  </p>
-
-                  <span id="pt-sales-date" class="cd-date">Julho 2012</span>
-                </div> <!-- cd-timeline-content -->
-              </div> <!-- cd-timeline-block -->
-
-              <div class="cd-timeline-block">
-                <div class="cd-timeline-img cd-movie">
-                </div>
-
-                <div class="cd-timeline-content">
-                  <h2><span id="store">Empregado de loja</span></h2>
-                  <p><span class="bold">Dr. Mouse</span></p>
-                  <p>01/04/2008 - 31/05/2012</p>
-                  <p><span id="store-text">Era encarregue do atendimento de clientes para venda de equipamentos, recepção de computadores para reparação, montagem de computadores
-                    para venda e formatação e instalação de software.</span>
-                  </p>
-                  <span id="store-date" class="cd-date">Abril 2008</span>
-                </div> <!-- cd-timeline-content -->
-              </div> <!-- cd-timeline-block -->
-            </section> <!-- cd-timeline -->
-          </div><!-- End Professional Experience -->
+  <body onload="setUpTangle();">
 
 
-          <!-- Skills -->
-          <p id="skills" style="text-align:center; font-size:30px;"><br><br><br><br><span class="glyphicon glyphicon-tasks"></span>&nbsp&nbsp<span id="tech-skills">Competências Técnicas</span><br><br></p>
-          <div id="skills-bars">
-            <div class="skillbar clearfix " data-percent="90%">
-              <div class="skillbar-title" style="background: #d35400;"><span>HTML5</span></div>
-              <div class="skillbar-bar" style="background: #e67e22;"></div>
-            </div> <!-- End Skill Bar -->
 
-            <div class="skillbar clearfix " data-percent="85%">
-              <div class="skillbar-title" style="background: #A02C23;"><span>Javascript</span></div>
-              <div class="skillbar-bar" style="background: #C55149;"></div>
-            </div> <!-- End Skill Bar -->
-
-            <div class="skillbar clearfix " data-percent="80%">
-              <div class="skillbar-title" style="background: #2980b9;"><span>CSS3</span></div>
-              <div class="skillbar-bar" style="background: #3498db;"></div>
-            </div> <!-- End Skill Bar -->
-
-            <div class="skillbar clearfix " data-percent="50%">
-              <div class="skillbar-title" style="background: #2c3e50;"><span>jQuery</span></div>
-              <div class="skillbar-bar" style="background: #455361;"></div>
-            </div> <!-- End Skill Bar -->
-
-            <div class="skillbar clearfix " data-percent="30%">
-              <div class="skillbar-title" style="background: #46465e;"><span>PHP</span></div>
-              <div class="skillbar-bar" style="background: #5a68a5;"></div>
-            </div> <!-- End Skill Bar -->
-
-            <div class="skillbar clearfix " data-percent="70%">
-              <div class="skillbar-title" style="background: #333333;"><span>C</span></div>
-              <div class="skillbar-bar" style="background: #525252;"></div>
-            </div> <!-- End Skill Bar -->
-
-            <div class="skillbar clearfix " data-percent="80%">
-              <div class="skillbar-title" style="background: #27ae60;"><span>C++</span></div>
-              <div class="skillbar-bar" style="background: #2ecc71;"></div>
-            </div> <!-- End Skill Bar -->
-
-            <div class="skillbar clearfix " data-percent="85%">
-              <div class="skillbar-title" style="background: #124e8c;"><span>Java</span></div>
-              <div class="skillbar-bar" style="background: #4288d0;"></div>
-            </div> <!-- End Skill Bar -->
-
-            <div class="skillbar clearfix " data-percent="75%">
-              <div class="skillbar-title" style="background: #9642D0;"><span>SQL</span></div>
-              <div class="skillbar-bar" style="background: #A366CE;"></div>
-            </div> <!-- End Skill Bar -->
-
-            <div class="skillbar clearfix " data-percent="45%">
-              <div class="skillbar-title" style="background: #BF4E89;"><span>Lisp</span></div>
-              <div class="skillbar-bar" style="background: #D486AF;"></div>
-            </div> <!-- End Skill Bar -->
-
-            <div class="skillbar clearfix " data-percent="60%">
-              <div class="skillbar-title" style="background: #E4B52F;"><span>Yacc & Lex</span></div>
-              <div class="skillbar-bar" style="background: #EFCB65;"></div>
-            </div> <!-- End Skill Bar -->
-          </div><!-- End Skills -->
-
-          <!-- Projects -->
-          <p class="titles-margin" style="text-align:center; font-size:30px;"><br><br><br><br><span class="glyphicon glyphicon-pencil"></span>&nbsp&nbsp<span id="projects">Projectos</span><br><br></p>
-          <div style="padding-top:30px;">
+        <div>
+          <div class="container">
             <div class="row">
-              <div class="col-md-1"></div>
-              <div class="col-md-10">
-                <div class="row">
-
-                  <div class="col-md-4" style="margin-bottom:20px;">
-                    <p style="text-align:center; margin-bottom:-25px;">
-                      App Phonegap
-                    </p>
-                    <div class ="project-button" id="phonegap-button">
-                      <ul class="ch-grid">
-                        <li>
-                          <div class="ch-item ch-img-1">
-                            <div class="ch-info">
-                              <p class="view-github">Ver no Github</p>
-                            </div>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                  </div><!-- End Col -->
-
-                  <div class="col-md-4" style="margin-bottom:20px;">
-                    <p style="text-align:center; margin-bottom:-25px;">
-                      Artificial Intelligence
-                    </p>
-                    <div class ="project-button" id="ai-button">
-                      <ul class="ch-grid">
-                        <li>
-                          <div class="ch-item ch-img-2">
-                            <div class="ch-info">
-                              <p class="view-github">Ver no Github</p>
-                            </div>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                  </div><!-- End Col -->
-
-                  <div class="col-md-4" style="margin-bottom:20px;">
-                    <p style="text-align:center; margin-bottom:-25px;">
-                      Barista
-                    </p>
-                    <div class ="project-button" id="barista-button">
-                      <ul class="ch-grid">
-                        <li>
-                          <div class="ch-item ch-img-3">
-                            <div class="ch-info">
-                              <p class="view-github">Ver no Github</p>
-                            </div>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                  </div><!-- End Col -->
-
-                </div><!-- End Row 1 -->
-                <div class="row">
-                  <div class="col-md-4" style="margin-bottom:20px;">
-                    <p style="text-align:center; margin-bottom:-25px;">
-                      Mini Twitter
-                    </p>
-                    <div class ="project-button" id="chilrear-button">
-                      <ul class="ch-grid">
-                        <li>
-                          <div class="ch-item ch-img-4">
-                            <div class="ch-info">
-                              <p class="view-github">Ver no Github</p>
-                            </div>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                  </div><!-- End Col -->
-
-                  <div class="col-md-4" style="margin-bottom:20px;">
-                    <p style="text-align:center; margin-bottom:-25px;">
-                      Minijava Compiler
-                    </p>
-                    <div class ="project-button" id="minijava-button">
-                      <ul class="ch-grid">
-                        <li>
-                          <div class="ch-item ch-img-5">
-                            <div class="ch-info">
-                              <p class="view-github">Ver no Github</p>
-                            </div>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                  </div><!-- End Col -->
-
-                  <div class="col-md-4" style="margin-bottom:20px;">
-                    <p style="text-align:center; margin-bottom:-25px;">
-                      Operating Systems
-                    </p>
-                    <div class ="project-button" id="os-button">
-                      <ul class="ch-grid">
-                        <li>
-                          <div class="ch-item ch-img-6">
-                            <div class="ch-info">
-                              <p class="view-github">Ver no Github</p>
-                            </div>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                  </div><!-- End Col -->
-
-                </div><!-- End Row 2 -->
-                <div class="row">
-                  <div class="col-md-2"></div>
-                  <div class="col-md-4" style="margin-bottom:20px;">
-                    <p style="text-align:center; margin-bottom:-25px;">
-                      Pacman
-                    </p>
-                    <div class ="project-button" id="pacman-button">
-                      <ul class="ch-grid">
-                        <li>
-                          <div class="ch-item ch-img-7">
-                            <div class="ch-info">
-                              <p class="view-github">Ver no Github</p>
-                            </div>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                  </div><!-- End Col -->
-
-                  <div class="col-md-4" style="margin-bottom:20px;">
-                    <p style="text-align:center; margin-bottom:-25px;">
-                      Tarjan Algorithm
-                    </p>
-                    <div class ="project-button" id="tarjan-button">
-                      <ul class="ch-grid">
-                        <li>
-                          <div class="ch-item ch-img-8">
-                            <div class="ch-info">
-                              <p class="view-github">Ver no Github</p>
-                            </div>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                  </div><!-- End Col -->
-
-                  <div class="col-md-2"></div>
-                </div><!-- End Row 3 -->
-              </div>
-              <div class="col-md-1"></div>
-            </div>
-          </div><!-- End Projects -->
-        </div><!-- End Resume Data -->
-        <!-- Div used to mark the end of the resume section  -->
-        <div id="resume-data-end"></div>
-
-        <!-- Contact Data-->
-        <p class="titles-margin" style="text-align:center; font-size:30px;"><br><br><br><br><span class="glyphicon glyphicon-home"></span>&nbsp&nbsp<span id="contacts-title">Contacto</span></p>
-        <div id="contacts-data" style="padding-top:30px;">
-          <div class="row">
-            <div class="col-md-2"></div>
-            <div class="col-md-8">
-              <div class="row">
-                <div class="col-md-5" style="max-width:400px; padding-bottom:30px; margin-left:30px; margin-right:30px;">
-                  <div id="map" style="width:100%;height:240px;"></div>
-                </div>
-                <div class="col-md-5" >
-                  <p style="font-size:15px;"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Oeiras, Portugal</p>
-                  <p style="font-size:15px;"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>  ivanfreire87@gmail.com</p>
-                </div>
+              <div class="col-sm-12">
+                <h1>Light Spectrum<br><br><br></h1>
               </div>
             </div>
-            <div class="col-md-2"></div>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <form role="form">
+                      <div class="form-group">
+                        <label for="frequency">Wave Frequency (THz):</label>
+                        <input type="wfrequency" class="form-control" id="wfrequency">
+                      </div>
+                      <button it="apply" type="button" class="btn btn-default" onclick="apply()">Apply</button>
+                    </form>
+                  <div>
+                  <p id="wave_frequency">
+                      <br><br>The wave have a frequency of  <span data-var="wave_frequency" class="TKAdjustableNumber" data-min="0" data-max="20000000"></span> terahertz (THz).
+                      <br><br>The wave have a length of <span data-var="wave_length"></span> nanometers (nm).
+                      <br><br> This wave is in the <span data-var="where"></span> spectrum with the color <span data-var="color"></span>.
+                      <br><br><span id="desc"></span>.
+                  </p>
+
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div >
+                  <span id="domain" class="graph">
+                   <svg class="function-plot" font-size="9.8" width="550" height="350">
+
+                      <g class="canvas" transform="translate(30,20)">
+                         <defs>
+                            <clipPath id="function-plot-clip-xe466acc5da4b9">
+                               <rect class="clip static-clip" width="490" height="310"></rect>
+                            </clipPath>
+                            <clipPath>
+                               <marker id="xe466acc5da4b9-marker" viewBox="0 -5 10 10" refX="10" markerWidth="5" markerHeight="5" orient="auto">
+                                  <path d="M0,-5L10,0L0,5L0,0" stroke-width="0px" fill-opacity="1" fill="#777"></path>
+                               </marker>
+                            </clipPath>
+                         </defs>
+                         <g style = "display:none" class="x axis" transform="translate(0,310)">
+
+                            <path class="domain" d="M0,0V0H490V0" fill="none" stroke="black" shape-rendering="crispedges" opacity="0.1"></path>
+                         </g>
+                         <g style = "display:none" class="y axis">
+
+                            <path class="domain" d="M0,0H0V310H0" fill="none" stroke="black" shape-rendering="crispedges" opacity="0.1"></path>
+                         </g>
+
+                         <g class="tip" clip-path="url(#function-plot-clip-xe466acc5da4b9)">
+                            <g class="inner-tip" transform="translate(182.5,-19.999999999999982)" style="display: none;">
+                               <path stroke="grey" stroke-dasharray="5,5" opacity="0.5" d="M0,-330L0,330" class="tip-x-line" style="display: none;"></path>
+                               <path stroke="grey" stroke-dasharray="5,5" opacity="0.5" d="M-510,0L510,0" class="tip-y-line" style="display: none;"></path>
+                               <circle r="3" fill="#4682b4"></circle>
+                               <text transform="translate(5,-5)" fill="#4682b4">(-5.912, 34.950)</text>
+                            </g>
+                         </g>
+                         <rect class="zoom-and-drag" width="490" height="310" style="fill: none; pointer-events: all;"></rect>
+                      </g>
+                   </svg>
+                 </span>
+                </div>
+              </div>
+
+            </div>
           </div>
-        </div><!-- End Contact Data -->
 
-      </div><!-- End Page -->
-    </div><!-- End Container -->
 
-    <!-- javascript -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js"></script>
+
+
+
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script> <!-- Resource jQuery -->
-    <script src="waypoints/lib/noframework.waypoints.min.js"></script>
-    <script src="js/index.js"></script>
-  </body>
-  </html>
+
+
+
+
+</body></html>
