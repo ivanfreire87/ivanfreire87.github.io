@@ -52,7 +52,7 @@ function translate_to(lang){
 
 		document.getElementById("education-text").innerHTML = "Education"
 		document.getElementById("experience").innerHTML = "Professional Experience"
-		document.getElementById("bachelor").innerHTML = "Bachelor in Information Systems and Computer Engineering"
+		document.getElementById("bachelor").innerHTML = "Bachelor's in Information Systems and Computer Engineering"
 		document.getElementById("masters").innerHTML = "Master's in Information Systems and Computer Engineering"
 		document.getElementById("12th-grade").innerHTML = "12th Grade"
 		
@@ -169,6 +169,7 @@ function translate_to(lang){
 		document.getElementById("education-text").innerHTML = "Educação"
 		document.getElementById("experience").innerHTML = "Experiência Profissonal"
 		document.getElementById("bachelor").innerHTML = "Licenciatura em Engenharia Informática e de Computadores"
+		document.getElementById("masters").innerHTML = "Mestrado em Engenharia Informática e de Computadores"
 		document.getElementById("12th-grade").innerHTML = "12º Ano de Escolaridade"
 		
 		
