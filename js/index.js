@@ -29,6 +29,8 @@ function translate_to(lang){
 		document.getElementById("resume-text").innerHTML = " Résumé"
 		document.getElementById("lang-text").innerHTML = " En"
 		document.getElementById("about-title").innerHTML = "About"
+		
+		document.getElementById("moment").innerHTML = "present day"
 		document.getElementById("about-sentence").innerHTML = "My name is Ivan Freire and I am a graduate in information" +
 		" systems and computer engineering."
 
@@ -38,15 +40,46 @@ function translate_to(lang){
 		document.getElementById("about-sentence3").innerHTML = "I liked to change the source code of" +
 		" web pages to see the changes taking place and made my first site at about 14 years of age."
 
-		document.getElementById("about-sentence4").innerHTML = "I've always been curious," +
+		document.getElementById("about-sentence4").innerHTML = "I'm very curious," +
 		" eager to learn and I love challenges, trying to be the best at what I do, both personally and professionally." +
 		" These personal characteristics were reflected in my academic career because I had to learn most of the materials" +
 		" alone while reconciling work with a course without an after-hours option."
+		
+		
+		document.getElementById("about-sentence5").innerHTML = "I've always had a fascination for artificial intelligence and my thesis was about monitoring people in domestic environments based on the intelligent houses of the future" +
+" and the creation of activity patterns of the inhabitants in order to generate automatic alerts in situations of risk and deviations from normal patterns of activity. I recently attended the" +
+" machine learning course from Open Data Science that involved participation in kaggle competitions which aroused great interest in this area."
 
 		document.getElementById("education-text").innerHTML = "Education"
 		document.getElementById("experience").innerHTML = "Professional Experience"
 		document.getElementById("bachelor").innerHTML = "Bachelor in Information Systems and Computer Engineering"
+		document.getElementById("masters").innerHTML = "Masters in Information Systems and Computer Engineering"
 		document.getElementById("12th-grade").innerHTML = "12th Grade"
+		
+		document.getElementById("sen").innerHTML = "Senior Consultant"
+		document.getElementById("sen-text").innerHTML = "Workers Compensation Project in the core of a major international insurer. I was involved in adapting the product and the various modules for the old laws" +
+" in order to migrate the policies of this product that were in the old core of the company and, consequently, assisted in the effective migration of the referred policies to the current core. I was in the warranty period and" +
+" in the corrective and evolutive maintenance of this product."
+		document.getElementById("sen-technology-used").innerHTML = "Technology used:"
+		document.getElementById("sen-date").innerHTML = "September 2018"
+		
+		document.getElementById("solan").innerHTML = "Solutions Analist"
+		document.getElementById("solan-text").innerHTML = "Workers Compensation Project in the core of a major international insurance company. I was responsible for building the pensions module." +
+" The construction of this module has undergone functional and technical analysis, the creation of pension management forms, the application of business rules and current Workers Compensation law and the beneficiaries' management. " +
+" In addition, I was responsible for the creation of several Workers Compensation processes, such as automatic payments of monthly installments, updating rates and salary volumes," +
+" updating pensions after updates by the Workers Compensation fund and changing the monthly pensions values taking into account the age of the beneficiaries so that their pensions remain in accordance with the current law."
+		document.getElementById("solan-technology-used").innerHTML = "Technology used:"
+		document.getElementById("solan-date").innerHTML = "September 2017"
+		
+		
+		document.getElementById("solass").innerHTML = "Solutions Assistant"
+		document.getElementById("solass-text").innerHTML = "Projects in the core of a major international insurance company - Civil Liability, Personal Accidents (Illness) and Workers Compensation. I was responsible for building the screens" +
+" for the products and their respective validations for filled fields as well as the creation of letters to send to the clients, through the construction of XML files, and the tariff rules of the various products. I was also involved in sending information through the layer" +
+" of services for the quotation and simulation of policies made by an external simulator using the SOAP protocol. I also had to create reports by extracting data and building excels from it."
+		document.getElementById("solass-technology-used").innerHTML = "Technology used:"
+		document.getElementById("solass-date").innerHTML = "September 2015"
+		
+		
 
 		document.getElementById("internship").innerHTML = "Summer Internship"
 		document.getElementById("internship-text").innerHTML = "The internship lasted a month during which I was in charge of" +
@@ -110,6 +143,9 @@ function translate_to(lang){
 		document.getElementById("resume-text").innerHTML = " Currículo"
 		document.getElementById("lang-text").innerHTML = " Pt"
 		document.getElementById("about-title").innerHTML = "Sobre"
+		
+		document.getElementById("moment").innerHTML = "o momento"
+		
 		document.getElementById("about-sentence").innerHTML = "O meu nome é Ivan Freire e sou licenciado em engenharia" +
 		" informática e de computadores."
 
@@ -119,15 +155,67 @@ function translate_to(lang){
 		document.getElementById("about-sentence3").innerHTML = "Gostava de alterar o código fonte de páginas web para ver as" +
 		" alterações que ocorriam e fiz o meu primeiro site por volta dos 14 anos."
 
-		document.getElementById("about-sentence4").innerHTML = "Sempre fui curioso, com vontade de aprender e adoro desafios," +
+		document.getElementById("about-sentence4").innerHTML = "Sou muito curioso, com vontade de aprender e adoro desafios," +
 		" tentando ser sempre o melhor possível no que faço, tanto a nível pessoal como profissional. Estas características" +
 		" pessoais reflectiram-se no meu percurso académico pois, uma vez que este curso não disponibilizava regime pós-laboral," +
 		" tive de aprender a maior parte das matérias sozinho enquanto conciliava o mesmo com o trabalho."
+		
+		document.getElementById("about-sentence5").innerHTML = "Sempre tive algum fascínio por inteligência artifical e fiz a minha tese em monitorização de pessoas em ambientes domésticos tendo por base as casas inteligentes do futuro" +
+					" e a criação de padrões de atividade dos habitantes por forma a gerar alertas automáticos em situações de risco e de desvio dos padrões normais de atividade. Recentemente, frequentei o curso de" +
+					" machine learning da Open Data Science que envolvia participações em competições da kaggle o que despertou um grande interesse por esta área."
+		
+		
 
 		document.getElementById("education-text").innerHTML = "Educação"
 		document.getElementById("experience").innerHTML = "Experiência Profissonal"
 		document.getElementById("bachelor").innerHTML = "Licenciatura em Engenharia Informática e de Computadores"
 		document.getElementById("12th-grade").innerHTML = "12º Ano de Escolaridade"
+		
+		
+		document.getElementById("sen").innerHTML = "Senior Consultant"
+		document.getElementById("sen-text").innerHTML = "Projeto de Acidentes de Trabalho (AT) no core de uma grande seguradora internacional. Estive envolvido na adaptação do produto de AT e dos vários módulos para as leis antigas" +
+				  " por forma a migrar as apólices deste produto que se encontravam no core antigo da seguradora e, consequentemente, auxiliei na migração efetiva das apólices referidas para o core atual. Estive no período de garantia e" +
+				  " na manutenção corretiva e evolutiva deste produto."
+		document.getElementById("sen-technology-used").innerHTML = "Tecnologias utilizadas:"
+		document.getElementById("sen-date").innerHTML = "Setembro 2018"
+		
+		
+		
+		
+		document.getElementById("solan").innerHTML = "Solutions Analist"
+		document.getElementById("solan-text").innerHTML = "Projeto de Acidentes de Trabalho (AT) no core de uma grande seguradora internacional. Estive responsável pela construção do módulo de pensões do produto de AT." +
+				 " A construção deste módulo passou pela análise funcional e técnica, criação de ecrãs de gestão de pensões, pela aplicação das regras de negócio e da lei atual de AT e pela gestão de pagamentos de" +
+				 " prestações aos beneficiários. Adicionalmente, fui responsável pela criação de vários processos de AT como os pagamentos automáticos das prestações mensais, atualização de taxas e volumes salariais," +
+				 " atualização de pessoas seguras, atualização de pensões mediante atualizações do fundo de AT e alteração mensal das pensões tendo em conta a idade dos beneficiários para que as respetivas pensões se mantenham de acordo com a lei atual."
+		
+		document.getElementById("solan-technology-used").innerHTML = "Tecnologias utilizadas:"
+		document.getElementById("solan-date").innerHTML = "Setembro 2017"
+		
+		
+		
+		document.getElementById("solan").innerHTML = "Solutions Analist"
+		document.getElementById("solan-text").innerHTML = "Projeto de Acidentes de Trabalho (AT) no core de uma grande seguradora internacional. Estive responsável pela construção do módulo de pensões do produto de AT." +
+				 " A construção deste módulo passou pela análise funcional e técnica, criação de ecrãs de gestão de pensões, pela aplicação das regras de negócio e da lei atual de AT e pela gestão de pagamentos de" +
+				 " prestações aos beneficiários. Adicionalmente, fui responsável pela criação de vários processos de AT como os pagamentos automáticos das prestações mensais, atualização de taxas e volumes salariais," +
+				 " atualização de pessoas seguras, atualização de pensões mediante atualizações do fundo de AT e alteração mensal das pensões tendo em conta a idade dos beneficiários para que as respetivas pensões se mantenham de acordo com a lei atual."
+		
+		document.getElementById("solan-technology-used").innerHTML = "Tecnologias utilizadas:"
+		document.getElementById("solan-date").innerHTML = "Setembro 2017"
+		
+		
+		
+		
+		
+		
+		document.getElementById("solass").innerHTML = "Solutions Assistant"
+		document.getElementById("solass-text").innerHTML = "Projetos no core de uma grande seguradora internacional - Responsabilidade Civil, Acidentes Pessoais (Doença) e Acidentes de Trabalho. Estive responsável pela construção de ecrãs" +
+				"  para os produtos e as respetivas validações dos campos preenchidos assim como a criação de cartas para os clientes através da construção de ficheiros XML e regras de tarifação dos vários produtos. Estive também envolvido no envio de informação através da camada" + 
+" de serviços para a emissão e simulação de apólices efetuados por simulador externo utilizando o protocolo SOAP. Tive também de criar reports através da extração de dados e construção de exceis a partir dos mesmos."
+
+		document.getElementById("solass-technology-used").innerHTML = "Tecnologias utilizadas:"
+		document.getElementById("solass-date").innerHTML = "Setembro 2015"
+		
+		
 
 		document.getElementById("internship").innerHTML = "Estágio de Verão"
 		document.getElementById("internship-text").innerHTML = "O estágio teve a duração de um mês durante o qual estive encarregue" +
