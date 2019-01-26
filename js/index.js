@@ -31,7 +31,7 @@ function translate_to(lang){
 		document.getElementById("about-title").innerHTML = "About"
 		
 		document.getElementById("moment").innerHTML = "present day"
-		document.getElementById("about-sentence").innerHTML = "My name is Ivan Freire and I am a graduate in information" +
+		document.getElementById("about-sentence").innerHTML = "My name is Ivan Freire and I have a master's degree in information" +
 		" systems and computer engineering."
 
 		document.getElementById("about-sentence2").innerHTML = "Interest in this area has awakened very early when I had" +
@@ -53,7 +53,7 @@ function translate_to(lang){
 		document.getElementById("education-text").innerHTML = "Education"
 		document.getElementById("experience").innerHTML = "Professional Experience"
 		document.getElementById("bachelor").innerHTML = "Bachelor in Information Systems and Computer Engineering"
-		document.getElementById("masters").innerHTML = "Masters in Information Systems and Computer Engineering"
+		document.getElementById("masters").innerHTML = "Master's in Information Systems and Computer Engineering"
 		document.getElementById("12th-grade").innerHTML = "12th Grade"
 		
 		document.getElementById("sen").innerHTML = "Senior Consultant"
